@@ -1,0 +1,56 @@
+#E1
+name = input("Cual es tu nombre? ")
+print("Hola, {0}".format(name))
+
+#E2
+print("Perimetro")
+base = int(input("Base: "))
+altura = int(input("Altura: "))
+oPerimetro = 2*(base + altura)
+print("El perimetro del rectangulo es: {0}".format(oPerimetro))
+
+#E3
+cateto1 = int(input("Cateto1: "))
+cateto2 = int(input("Cateto2: "))
+oHipotenusa = math.sqrt(cateto1**2 + cateto2**2)
+print("La hipotenusa es: {0}".format(oHipotenusa))
+
+#E4
+num1 = int(input("num1: "))
+num2 = int(input("num1: "))
+oSuma = num1 + num2
+oResta = num1 - num2
+oMult = num1 * num2
+oDiv = num1 / num2
+print("""
+Las Cuatro operaciones
+---------------------------------
+Suma    :{0}
+Resta   :{1}
+Multi   :{2}
+Divi    :{3}""".format(oSuma,oResta,oMult,oDiv))
+
+#E5
+gFahren = float(input("Grados Fahrenheit?"))
+oTransformGrados = (gFahren - 32)*5/9
+print("Grados Celcius: {0}".format(oTransformGrados))
+
+#E6
+num1 = int(input("num1"))
+num2 = int(input("num2"))
+num3 = int(input("num3"))
+opromedio = (num1 + num2 + num3)/33
+print("El promedio es: {0}".format(opromedio))
+
+#E7
+minutos = int(input("Cantidad de minutos: "))
+o_trans_time = minutos // 60
+o_trans_min = minutos & 60
+print("{0}min en horas es: {1}H:{2}min".format(minutos,o_trans_time, o_trans_min))
+
+#E8
+sueldo = float(input("Sueldo :"))
+ventas = float(input("Total de Ventas: "))
+oComision = (10 * ventas)/100
+print("Total de sueldo a recivir sueldo: {0} comision: {1} total: {2} ".format(sueldo,oComision,sueldo+oComision))
+
